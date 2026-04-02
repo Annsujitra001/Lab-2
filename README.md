@@ -14,7 +14,7 @@
        2.2 เลือกช่วงเวลานี้ เพราะ
               > มกราคม 2023 (ก่อนฤดูแล้ง)
               > เมษายน–พฤษภาคม 2023 (ช่วงฤดูแล้ง)
-	     2.3 Cloud Filter
+	   2.3 Cloud Filter
               > กำหนด < 20% เพื่อลดผลกระทบจากเมฆ
 
 Methodology
@@ -24,26 +24,26 @@ Methodology
               > กรองภาพ Sentinel-2 ตามช่วงเวลาและ cloud percentage
               > เลือกเฉพาะ band ที่จำเป็น (B2, B3, B4, B8) เพื่อแก้ปัญหา band ไม่สม่ำเสมอ
               > สร้าง composite ด้วย median และ clip ตามขอบเขตพื้นที่ศึกษา
-	     2. Spectral Indices
-		          2.1 NDVI (Normalized Difference Vegetation Index) 
+	   2. Spectral Indices
+		      2.1 NDVI (Normalized Difference Vegetation Index) 
                   ใช้วัดความหนาแน่นของพืชพรรณ
 			                สูตร: NDVI = (B8 - B4) / (B8 + B4)
-		          2.2 NDWI (Normalized Difference Water Index) 
+		      2.2 NDWI (Normalized Difference Water Index) 
                   ใช้วัดความชื้นและแหล่งน้ำ
 			                สูตร: NDWI = (B3 - B8) / (B3 + B8)
         3. Temporal Analysis (Comparison)
-		         มีการเปรียบเทียบ NDVI ระหว่าง:
+		      มีการเปรียบเทียบ NDVI ระหว่าง:
                 > มกราคม (ก่อนแล้ง)
                 > เมษายน (ช่วงแล้ง)
-	           Result: NDVI ลดลงในหลายพื้นที่ โดยเฉพาะพื้นที่เกษตรกรรม
-		         Interpretation: แสดงถึงผลกระทบของฤดูแล้งที่ทำให้พืชพรรณลดความหนาแน่นลง
-	      4. NDVI Change Map
-		         คำนวณ: NDVI Change = NDVI (April) - NDVI (January)
-		         Interpretation:
+	          Result: NDVI ลดลงในหลายพื้นที่ โดยเฉพาะพื้นที่เกษตรกรรม
+		      Interpretation: แสดงถึงผลกระทบของฤดูแล้งที่ทำให้พืชพรรณลดความหนาแน่นลง
+	    4. NDVI Change Map
+		      คำนวณ: NDVI Change = NDVI (April) - NDVI (January)
+		      Interpretation:
                 > สีแดง --> พืชลดลง
                 > สีเขียว --> พืชเพิ่มขึ้น
                 > สีขาว --> ไม่เปลี่ยน
-		         Result: พื้นที่ส่วนใหญ่แสดงสีแดง แสดงถึงการลดลงของพืชพรรณในช่วงฤดูแล้ง
+		      Result: พื้นที่ส่วนใหญ่แสดงสีแดง แสดงถึงการลดลงของพืชพรรณในช่วงฤดูแล้ง
 
 
 
