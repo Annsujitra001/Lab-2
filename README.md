@@ -17,7 +17,7 @@
 	   2.3 Cloud Filter
               > กำหนด < 20% เพื่อลดผลกระทบจากเมฆ
 
-Methodology
+ Methodology
 
        1. Data Preparation
               > เลือกพื้นที่จังหวัดเชียงใหม่จาก FAO GAUL dataset
