@@ -1,5 +1,7 @@
 # Lab-2
 
+Lab 2: Spatial Analysis กับ Google Earth Engine
+
 1. เลือกพื้นที่ศึกษาและเหตุผล
 
        พื้นที่ศึกษา: จังหวัดเชียงใหม่
